@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>!DOCTYPE</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>Expence tracker</h2>
+        <script>
+            fetch('http://localhost:8080/api/categories', {
+                headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTcwOTIxMjQsImV4cCI6MTYxNzA5OTMyNCwidXNlcklkIjozLCJlbWFpbCI6ImZsYXRlcmljQGdtYWlsLmNvbSIsImZpcnN0TmFtZSI6IkZsYXQiLCJsYXN0TmFtZSI6IkVyaWMifQ.jNAfnwlNQy5351t0oQhZZwAIw1__dXh934EH0nFutEo'}
+            })
+            .then(res => res.json())
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+        </script>
+</body>
+</html>
